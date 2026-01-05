@@ -1,8 +1,8 @@
-function register() {
+function register() 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
 
-    fetch("https://simple-backend-as7j.onrender.com/register", {
+    fetch("https://simple-backend-as7j.onrender.com", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -17,4 +17,5 @@ function register() {
         document.getElementById("result").innerText = "Error connecting to server";
     });
 }
+
 
